@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:rotationX="0"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/forecastValID"
+        android:layout_width="94sp"
+        android:layout_height="73sp"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/todayWeatherID"
+        app:layout_constraintEnd_toStartOf="@+id/tomorrowTempID"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/todayID" />
+
+    <Button
+        android:id="@+id/toWeatherID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/flamingo"
+        android:textColor="@color/white"
+        android:onClick="moveToWeather"
+        android:text="@string/button_to_weather"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/todayWeatherID" />
+
+    <TextView
+        android:id="@+id/todayID"
+        android:layout_width="94sp"
+        android:layout_height="73sp"
+        android:text="@string/today_text"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/forecastValID"
+        app:layout_constraintEnd_toStartOf="@+id/tomorrowID"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/todayWeatherID"
+        android:layout_width="94sp"
+        android:layout_height="73sp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/toWeatherID"
+        app:layout_constraintEnd_toStartOf="@+id/tomorrowWeatherID"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/forecastValID" />
+
+    <TextView
+        android:id="@+id/satID"
+        android:layout_width="94sp"
+        android:layout_height="73sp"
+        android:textAlignment="center"
+        android:text="@string/saturday_text"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/satTempID"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tomorrowID"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tomorrowID"
+        android:layout_width="98sp"
+        android:layout_height="73sp"
+        android:textAlignment="center"
+        android:text="@string/tomorrow_text"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/tomorrowTempID"
+        app:layout_constraintEnd_toStartOf="@+id/satID"
+        app:layout_constraintStart_toEndOf="@+id/todayID"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tomorrowTempID"
+        android:layout_width="94sp"
+        android:layout_height="73sp"
+        android:textAlignment="center"
+        android:text="@string/tomorrow_temp_val"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/tomorrowWeatherID"
+        app:layout_constraintEnd_toStartOf="@+id/satTempID"
+        app:layout_constraintStart_toEndOf="@+id/forecastValID"
+        app:layout_constraintTop_toBottomOf="@+id/tomorrowID" />
+
+    <TextView
+        android:id="@+id/satTempID"
+        android:layout_width="94sp"
+        android:layout_height="73sp"
+        android:textAlignment="center"
+        android:text="@string/sat_temp_val"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/satWeatherID"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tomorrowTempID"
+        app:layout_constraintTop_toBottomOf="@+id/satID" />
+
+    <TextView
+        android:id="@+id/satWeatherID"
+        android:layout_width="94sp"
+        android:layout_height="73sp"
+        android:textAlignment="center"
+        android:text="@string/cloudy_fc_txt"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/toWeatherID"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tomorrowWeatherID"
+        app:layout_constraintTop_toBottomOf="@+id/satTempID" />
+
+    <TextView
+        android:id="@+id/tomorrowWeatherID"
+        android:layout_width="94sp"
+        android:layout_height="73sp"
+        android:textAlignment="center"
+        android:text="@string/snow_fc_text"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/toWeatherID"
+        app:layout_constraintEnd_toStartOf="@+id/satWeatherID"
+        app:layout_constraintStart_toEndOf="@+id/todayWeatherID"
+        app:layout_constraintTop_toBottomOf="@+id/tomorrowTempID" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

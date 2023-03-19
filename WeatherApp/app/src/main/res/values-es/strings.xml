@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Clima</string>
+    <string name="weather">Toca aquí para obtener el clima.</string>
+    <string name="button_to_forecast">Pronóstico</string>
+    <string name="button_to_weather">Clima ahora</string>
+    <string name="temperature_string">Temperatura</string>
+    <string name="wind_string">Viento</string>
+    <string name="weather_string">Clima</string>
+    <string name="refresh">Actualizar</string>
+    <string name="to_tuni_fi">A tuni.fi</string>
+    <string name="add_alarm">Añadir Alarma</string>
+    <string name="open_maps">Abrir Mapas</string>
+    <string name="snow_fc_text">Nieve</string>
+    <string name="cloudy_fc_txt">Nublado</string>
+    <string name="tomorrow_text">Mañana</string>
+    <string name="saturday_text">Sábado</string>
+    <string name="today_text">Hoy</string>
+</resources>
